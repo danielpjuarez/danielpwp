@@ -1,8 +1,10 @@
 <html lang="en">
 	<head>
+		<link rel = "stylesheet" type = "text/css" href = "../..c/style.css">
 		<title>
 			Milestone 1
 		</title>
+
 	</head>
 	<body>
 		<h1>
@@ -45,6 +47,5 @@
 				is passionate about developing high quality web applications because they
 				see the potential that they have.
 			</p>
-		</ul>
 	</body>
 </html>

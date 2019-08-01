@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="d32004f7-ba45-4bed-99d2-a7ad789d6e9c" name="danielpwp" url="https://bootcamp-coders.cnm.edu/~djuarez11/danielpwp">
+        <fileTransfer host="bootcamp-coders.cnm.edu" port="22" rootFolder="/home/djuarez11/public_html/danielpwp" accessType="SFTP" authAgent="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

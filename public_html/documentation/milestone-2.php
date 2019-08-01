@@ -27,9 +27,9 @@
 		(LinkedIn, GitHub, my website, etc.). I haven't decided how I big or featured I want these links, or even if I
 		want them above or below my contact form, so I've included two variations of my wireframes below.
 	</p>
-	<img src="/resources/mobile.png" alt="mobile version">
-	<img src="/resources/desktop.png" alt="desktop version">
-	<img src="/resources/mobile-alt.png" alt="alternate mobile version">
-	<img src="/resources/desktop-alt.png" alt="alternate desktop version">
+	<img src="../resources/mobile.png" alt="mobile version">
+	<img src="../resources/desktop.png" alt="desktop version">
+	<img src="../resources/mobile-alt.png"alternate mobile version>
+	<img src="../resources/desktop-alt.png" alt="alternate desktop version">
 	</body>
 </html>

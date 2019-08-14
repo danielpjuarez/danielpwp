@@ -55,16 +55,16 @@ $(document).ready(function(){
 
 		// AJAX submit the form data to back end if rules pass
 		submitHandler: function(form) {
-			$("daniel-contact-form").ajaxSubmit({
+			$("#daniel-contact-form").ajaxSubmit({
 				type: "POST",
-				url: $("daniel-contact-form").attr("action"),
+				url: $("#daniel-contact-form").attr("action"),
 
 				success: function(ajaxOutput) {
 					// clear the output area's formatting
-					$("output-area").css("display", "");
+					$("#output-area").css("display", "");
 
 					// write the server's reply to the output area
-					$("output-area").html(ajaxOutput);
+					$("#output-area").html(ajaxOutput);
 
 					// reset the form if it was successful
 					if($(".alert-success").length >= 1) {

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * index.php
+ * file should be index.php
  *
  * This file handles secure mail transport using the Mailgunner
  * library with Google reCAPTCHA integration.

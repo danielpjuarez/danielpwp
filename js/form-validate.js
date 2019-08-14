@@ -5,12 +5,12 @@ $(document).ready(function(){
 	 *
 	 * This function provides front-end validation for your form.
 	 * If all tests set up here pass, the form data is AJAX submitted
-	 * to the mailer.php file.
+	 * to the index.php file.
 	 *
 	 * Update this file as needed for your form.
 	 * All ids and name values must match up to your form here.
 	 *
-	 * @author Rochelle Lewis <rlewis37@cnm.edu>
+	 * @author Rochelle Lewis <rlewis37@cnm.edu>, I just copypasted and made some edits
 	 **/
 
 	/* begin validate function here */

@@ -41,23 +41,52 @@
 		</div>
 		<form id="daniel-contact-form" action="php/mailer.php" method="post">
 			<div class="form-group">
-				<label for="InputName">Name*</label>
+				<label for="inputName">Name*</label>
 				<div class="input-group">
-					<span class="input-group-text"></span>
-					<i class="fa fa-user" aria-hidden="true"></i>
+					<div class="input-group-prepend">
+						<span class="input-group-text"></span>
+						<i class="fa fa-user" aria-hidden="true"></i>
+					</div>
+					<input type="text" class="form-control" id="inputName" placeholder="Your Name">
 				</div>
-				<input type="text" class="form-control" id="nameFormInput" placeholder="Your Name">
 			</div>
 			<div class="form-group">
-				<label for="InputEmail">Email*</label>
+				<label for="inputEmail">Email*</label>
 				<div class="input-group">
 					<div class="input-group-prepend">
 						<span class="input-group-text"></span>
 						<i class="fa fa-envelop" aria-hidden="true"></i>
 					</div>
+					<input type="email" class="form-control" id="inputEmail" placeholder="you@email.com">
 				</div>
-				<input type="email" class="form-control" id="emailFormControlInput" placeholder="you@email.com">
 			</div>
+			<div class="form-group">
+				<label for ="contactSubject"></label>
+				<div class="input-group">
+					<div class="input-group-prepend">
+						<span class="input-group-text"></span>
+						<i class="fa fa-pencil" aria-hidden="true"></i>
+					</div>
+					<input type="text" class="form-control" id="contactSubject" name="contactSubject"
+							 placeholder="subject">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="contactMessage">Message</label>
+				<div class="input-group">
+					<div class="input-group=prepend">
+						<span class="input-group-test"></span>
+						<i class="fa fa-comment" aria-hidden="true"></i>
+					</div>
+					<textarea class="form-control" rows="5" id="contactMessage"
+								 placeholder="Your Message, 2000 characters max"></textarea>
+				</div>
+			</div>
+
+			<!-- reCAPTCHA required stuff-->
+			<div class="g-recaptcha" data-sitekey="6LdZ6rIUAAAAAH_Tkiwk8zB0qFALMtt6n3aMbIRS"></div>
+
+
 		</form>
 	</body>
 </html>

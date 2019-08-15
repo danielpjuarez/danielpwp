@@ -34,10 +34,10 @@ try {
 	 * so we're using the $_POST superglobal.
 	 **/
 
-	$name = filter_input(INPUT_POST, "name", FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
-	$email = filter_input(INPUT_POST, "email", FILTER_SANITIZE_EMAIL);
-	$subject = filter_input(INPUT_POST, "subject", FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
-	$message = filter_input(INPUT_POST, "message", FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
+	$contactName = filter_input(INPUT_POST, "name", FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
+	$contactEmail = filter_input(INPUT_POST, "email", FILTER_SANITIZE_EMAIL);
+	$contactSubject = filter_input(INPUT_POST, "subject", FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
+	$contactMessage = filter_input(INPUT_POST, "message", FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
 
 
 	// create Swift message
@@ -46,7 +46,7 @@ try {
 	 * Attach the sender to the message.
 	 * This takes the form of an associative array where $email is the key for the real name.
 	 **/
-	$swiftMessage->setFrom([$email => $name]);
+	$swiftMessage->setFrom([$contactEmail => $contactName]);
 	/**
 	 * Attach the recipients to the message.
 	 * $MAIL_RECIPIENTS is set in mail-config.php
@@ -54,7 +54,7 @@ try {
 	$recipients = $MAIL_RECIPIENTS;
 	$swiftMessage->setTo($recipients);
 	// attach the subject line to the message
-	$swiftMessage->setSubject($subject);
+	$swiftMessage->setSubject($contactSubject);
 	/**
 	 * Attach the actual message to the message.
 	 *
@@ -66,8 +66,8 @@ try {
 	 * this lets users who aren't viewing HTML content in Emails still access your
 	 * links.
 	 **/
-	$swiftMessage->setBody($message, "text/html");
-	$swiftMessage->addPart(html_entity_decode($message), "text/plain");
+	$swiftMessage->setBody($contactMessage, "text/html");
+	$swiftMessage->addPart(html_entity_decode($contactMessage), "text/plain");
 
 	/**
 	 * Send the Email via the Mailgun API. The Mailgun API will handle the actual sending of the email.

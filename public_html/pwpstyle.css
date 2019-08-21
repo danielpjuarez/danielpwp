@@ -1,3 +1,18 @@
 .container {
-	background: ;
+}
+
+.navbar {
+	color: #AA743A
+}
+
+.bikeCart {
+	max-height: 32em;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;}
+
+.btn-primary {
+	background-color: #F19837;
+	color: black;
+	border-color: #F19837;
 }

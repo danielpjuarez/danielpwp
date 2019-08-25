@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<title>Daniel Juarez's Personal Website Project</title>
+		<title>Daniel Juarez's Personal Website</title>
 
 		<!-- Integrates full version of jquery for json-->
 		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -33,7 +33,9 @@
 	<body>
 		<div class="container">
 			<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
-				<a class="navbar-brand" href="#">Daniel Juarez</a>
+				<div class="navbar-header">
+				<a class="navbar-brand" href="#">Daniel Juarez, Fullstack Web Developer</a>
+				</div>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
@@ -49,7 +51,7 @@
 							<a class="nav-link" href="#my-links">My Links</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#daniel-contact-form">Contact Me</a>
+							<a class="nav-link" href="#contact-me">Contact Me</a>
 						</li>
 					</ul>
 				</div>
@@ -59,96 +61,133 @@
 					<img src="resources/bikeCart.jpg" class="img-fluid bikeCart " alt="bike cart" title="Yes, it's a bike attached to a shopping cart">
 				</div>
 			</div>
-			<h2 id="about-me">About Me</h2>
-			<p>
-				A bike connected to a shopping cart? You're probably thinking the same as I was when I took this picture, namely, "Hey, that's a good idea".
+			<div class="Me-section">
+				<h2 id="about-me">About Me</h2>
+				<p>
+					You may ask, "What does a bike connected to a shopping cart have to do with web development?"
+					<br>
+					Well, as you know, web development is all about solving problems. The problem can be figuring out how to most effectively advertise your business, or it can be finding a way to talk with your far-flung friends and family, but that root cause is always there. We're here to solve problems.
+					<br>I took this picture because I recognized, that like <span title="The good one, not the one with Lucas Till"><i>McGyver</i></span>, the crew of and team behind Apollo 13 (who had to figure out how to literally fit a <a href="https://gizmodo.com/this-is-the-actual-hack-that-saved-the-astronauts-of-th-1598385593">square peg in a round hole </a> with supplies available on the spacecraft), and the creator of this bike-cart:
+				<ol>
+					<li>
+						It is always possible to "improvise, adapt, and overcome"
+					</li>
+					<li>
+						If it's stupid and it works, it's not stupid
+					</li>
+				</ol>
+				I'm no McGyver. But, as an entry-level web developer, I'm here to help solve your problems, even if that means creating a bike-cart.
 				<br>
-				And it is. While this might have been intended as some avante-garde art-piece, or as a joke, the fact of the matter is that it's a perfectly functional bike trailer. Sure, you could go to the store and buy a fancy bike trailer purpose-built for your needs, or you could simply plop down a credit card and rent a car for a day. But what if there is no store close to you? Or you can't afford to rent a car right now?
-				<br>
-				No, there's nothing wrong with conventional solutions. But if you don't have the exact resources you need, you can always create a bike-cart. <span title="The good one, not the one with Lucas Till"><i>McGyver</i></span>, the crew of and team behind Apollo 13 (who had to figure out how to literally fit a <a href="https://gizmodo.com/this-is-the-actual-hack-that-saved-the-astronauts-of-th-1598385593">square peg in a round hole </a> with supplies available on the spacecraft) as well as my time working in IT, as an EMT, and in Web Development, have taught me two important lessons:
-			<ol>
-				<li>
-					It is always possible to "improvise, adapt, and overcome"
-				</li>
-				<li>
-					If it's stupid and it works, it's not stupid
-				</li>
-			</ol>
-			Whether it comes down to creating a pelvic binder out of a blanket and a big stick, irrigating someone's eyes with a bag of normal saline and extra-large syringe, or helping your company build innovative web-apps and pages, I'm your guy. My name is Daniel Juarez, and I'm an entry-level web developer ready and able to help you solve problems.
-			</p>
-			<h2>My Work</h2>
-			<div class="row">
-				<div class="card" style="width: 18rem;">
-					<img class="card-img-top img-thumbnail" src="resources/placeholderBurner.jpg" alt="Card image cap">
-					<div class="card-body">
-						<h5 class="card-title">Peep</h5>
-						<p class="card-text">"Peep" is webapp that my group, "Birbs" created during my time attending the CNM Fullstack Web Development program. Using data from the eBirds API, it allows users to keep track of their bird sightings around New Mexico. </p>
-						<a href="#" class="btn btn-primary">Check It Out!</a>
+				There's nothing wrong with conventional solutions. But if you don't have the exact resources you need, you can always create a bike-cart. The person who made this contraption  all know the importaceas well as my time working in IT, as an EMT, and in Web Development, have taught me two important lessons:
+
+				Whether it comes down to creating a pelvic binder out of a blanket and a big stick, irrigating someone's eyes with a bag of normal saline and extra-large syringe, or helping your company build innovative web-apps and pages, I'm your guy. My name is Daniel Juarez, and I'm an entry-level web developer ready and able to help you solve problems.
+				</p>
+			</div>
+			<div class="work-section">
+				<h2 id="my-work">My Work</h2>
+				<div class="row">
+					<div class="card mx-auto" style="width: 17rem;">
+						<img class="card-img-top img-thumbnail" src="resources/placeholderBurner.jpg" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">Peep</h5>
+							<p class="card-text">"Peep" is webapp that my group, "Birbs" created during my time attending the CNM Fullstack Web Development program. Using data from the eBirds API, it allows users to keep track of their bird sightings around New Mexico. </p>
+							<a href="#" class="btn btn-primary">Check It Out!</a>
+						</div>
+					</div>
+					<div class="card mx-auto" style="width: 17rem;">
+						<img class="card-img-top img-thumbnail" src="resources/placeholderBurner.jpg" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">Peep</h5>
+							<p class="card-text">"Peep" is webapp that my group, "Birbs" created during my time attending the CNM Fullstack Web Development program. Using data from the eBirds API, it allows users to keep track of their bird sightings around New Mexico. </p>
+							<a href="#" class="btn btn-primary">Check It Out!</a>
+						</div>
+					</div>
+					<div class="card mx-auto" style="width: 17rem;">
+						<img class="card-img-top img-thumbnail" src="resources/placeholderBurner.jpg" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">Peep</h5>
+							<p class="card-text">"Peep" is webapp that my group, "Birbs" created during my time attending the CNM Fullstack Web Development program. Using data from the eBirds API, it allows users to keep track of their bird sightings around New Mexico. </p>
+							<a href="#" class="btn btn-primary">Check It Out!</a>
+						</div>
+					</div>
+					<div class="card mx-auto" style="width: 17rem;">
+						<img class="card-img-top img-thumbnail" src="resources/placeholderBurner.jpg" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">Peep</h5>
+							<p class="card-text">"Peep" is webapp that my group, "Birbs" created during my time attending the CNM Fullstack Web Development program. Using data from the eBirds API, it allows users to keep track of their bird sightings around New Mexico. </p>
+							<a href="#" class="btn btn-primary">Check It Out!</a>
+						</div>
 					</div>
 				</div>
 			</div>
-
-
-
-			<form id="daniel-contact-form" action="../php/" method="post">
-				<div class="form-group">
-					<label for="Name">Name*</label>
-					<div class="input-group">
-						<div class="input-group-prepend">
-							<span class="input-group-text"></span>
-							<i class="oi oi-person" title="person" aria-hidden="true"></i>
+			<div class="contact-section">
+				<h2 id="contact-me">Contact Me!</h2>
+				<form id="daniel-contact-form" action="../php/" method="post">
+					<div class="form-group">
+						<label for="Name">Name*</label>
+						<div class="input-group">
+							<div class="input-group-prepend">
+								<span class="input-group-text"></span>
+								<i class="oi oi-person" title="person" aria-hidden="true"></i>
+							</div>
+							<input type="text" class="form-control" id="Name" name="Name" placeholder="Your Name">
 						</div>
-						<input type="text" class="form-control" id="Name" name="Name" placeholder="Your Name">
 					</div>
-				</div>
-				<div class="form-group">
-					<label for="email">Email*</label>
-					<div class="input-group">
-						<div class="input-group-prepend">
-							<span class="input-group-text"></span>
-							<i class="fa fa-envelop" aria-hidden="true"></i>
+					<div class="form-group">
+						<label for="email">Email*</label>
+						<div class="input-group">
+							<div class="input-group-prepend">
+								<span class="input-group-text"></span>
+								<i class="fa fa-envelop" aria-hidden="true"></i>
+							</div>
+							<input type="email" class="form-control" id="email" name="email" placeholder="You@email.com">
 						</div>
-						<input type="email" class="form-control" id="email" name="email" placeholder="You@email.com">
 					</div>
-				</div>
-				<div class="form-group">
-					<label for ="Subject">Subject</label>
-					<div class="input-group">
-						<div class="input-group-prepend">
-							<span class="input-group-text"></span>
-							<i class="fa fa-pencil" aria-hidden="true"></i>
+					<div class="form-group">
+						<label for ="Subject">Subject</label>
+						<div class="input-group">
+							<div class="input-group-prepend">
+								<span class="input-group-text"></span>
+								<i class="fa fa-pencil" aria-hidden="true"></i>
+							</div>
+							<input type="text" class="form-control" id="Subject" name="Subject"
+									 placeholder="Subject">
 						</div>
-						<input type="text" class="form-control" id="Subject" name="Subject"
-								 placeholder="Subject">
 					</div>
-				</div>
 
-				<div class="form-group">
-					<label for="Message">Message</label>
-					<div class="input-group">
-						<div class="input-group=prepend">
-							<span class="input-group-test"></span>
-							<i class="fa fa-comment" aria-hidden="true"></i>
+					<div class="form-group">
+						<label for="Message">Message</label>
+						<div class="input-group">
+							<div class="input-group=prepend">
+								<span class="input-group-test"></span>
+								<i class="fa fa-comment" aria-hidden="true"></i>
+							</div>
+							<textarea class="form-control" rows="5" id="Message" name="Message"
+										 placeholder="Your Message, 2000 characters max"></textarea>
 						</div>
-						<textarea class="form-control" rows="5" id="Message" name="Message"
-									 placeholder="Your Message, 2000 characters max"></textarea>
 					</div>
-				</div>
 
 
-				<!-- reCAPTCHA required stuff-->
-				<div class="g-recaptcha" data-sitekey="6LcsCrMUAAAAAFssJDvtZmO9TLtenv_bzKRIioZk"></div>
+					<!-- reCAPTCHA required stuff-->
+					<div class="g-recaptcha" data-sitekey="6LcsCrMUAAAAAFssJDvtZmO9TLtenv_bzKRIioZk"></div>
 
-				<button class="btn btn-success" type="submit"><i class="fa fa-paper-plane"></i>Send</button>
-				<button class="btn btn-warning" type="reset"><i class="fa fa-ban"></i>Reset</button>
-			</form>
+					<button class="btn btn-success" type="submit"><i class="fa fa-paper-plane"></i>Send</button>
+					<button class="btn btn-warning" type="reset"><i class="fa fa-ban"></i>Reset</button>
+				</form>
 
-			<!--empty area for form error/success output-->
-			<div class="row">
-				<div class="col-xs-12">
-					<div id="contact-form-output-area"></div>
+				<!--empty area for form error/success output-->
+				<div class="row">
+					<div class="col-xs-12">
+						<div id="contact-form-output-area"></div>
+					</div>
 				</div>
 			</div>
+			<div class="Link-Section">
+				<h2 id="my-links">My Links</h2>
+			</div>
+
 		</div>
+
+
 	</body>
 </html>

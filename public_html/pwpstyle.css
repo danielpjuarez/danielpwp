@@ -1,6 +1,10 @@
 .container {
 }
 
+.card {
+	padding:5px;
+	margin:5px;
+}
 .navbar {
 	color: #AA743A
 }

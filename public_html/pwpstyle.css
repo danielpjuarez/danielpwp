@@ -1,27 +1,31 @@
+.navbar-brand,
+.nav-link{
+	color: white;
+}
+
 .card {
 	padding:5px;
 	margin:5px;
 }
 
 .resetButton {
-	background-color: #F19837
+	background-color: #F19837;
+	color: white;
 }
 
 body {
-	padding-top: 85px;
+	padding-top:3em;}
+
+@media screen and (min-width: 576px) {
+	.bikeCart{
+		width: 50%;
 	}
-	@media (max-width:979px) {
-	body {padding-top: 0}
 }
 
-div.bikeCart {
-	max-height: 32em;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;}
 
-.btn-primary .sendButton{
+.btn-primary,
+.sendButton{
 	background-color: #007bff;
-	color: black;
-	border-color: #F19837;
+	color: white;
+	border-color: #007bff;
 }

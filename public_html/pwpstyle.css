@@ -18,10 +18,15 @@ body {
 
 @media screen and (min-width: 576px) {
 	.bikeCart{
-		width: 50%;
+		width: 75%;
 	}
 }
 
+@media screen and (min-width: 767px) {
+	.bikeCart{
+		width: 50%;
+	}
+}
 
 .btn-primary,
 .sendButton{

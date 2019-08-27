@@ -6,20 +6,29 @@
 		<title>Daniel Juarez's Personal Website</title>
 
 		<!-- Integrates full version of jquery for json-->
-		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+				  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
 		<!--bootstrap dependencies taken from https://getbootstrap.com/docs/4.3/getting-started/introduction/-->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+				integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<!--		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+				  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+				  crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+				  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+				  crossorigin="anonymous"></script>
 		<!--integrates open iconic for some icons I need-->
 
 
 		<!-- jQuery Form, Additional Methods, Validate -->
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"></script>
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"></script>
+		<script type="text/javascript"
+				  src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"></script>
+		<script type="text/javascript"
+				  src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+		<script type="text/javascript"
+				  src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"></script>
 
 		<!-- Your JavaScript Form Validator -->
 		<script src="js/form-validate.js"></script>
@@ -32,13 +41,15 @@
 	</head>
 	<body>
 		<div class="container">
-			<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+			<nav id="nav" class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
 				<div class="navbar-header">
-				<a class="navbar-brand" href="#">Daniel Juarez, Fullstack Web Developer</a>
+					<a class="navbar-brand" href="#">Daniel Juarez, Fullstack Web Developer</a>
+
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+							  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
 				</div>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="navbar-nav">
 						<li class="nav-item">
@@ -58,16 +69,23 @@
 			</nav>
 			<div class="media">
 				<div class="media-body">
-					<img src="resources/bikeCart.jpg" class="img-fluid bikeCart " alt="bike cart" title="Yes, it's a bike attached to a shopping cart">
+					<img src="resources/bikeCart.jpg" class="img-fluid bikeCart " alt="bike cart"
+						  title="Yes, it's a bike attached to a shopping cart">
 				</div>
 			</div>
-			<div class="Me-section">
+			<div class="Me-section container">
 				<h2 id="about-me">About Me</h2>
 				<p>
 					You may ask, "What does a bike connected to a shopping cart have to do with web development?"
 					<br>
-					Well, as you know, web development is all about solving problems. The problem can be figuring out how to most effectively advertise your business, or it can be finding a way to talk with your far-flung friends and family, but that root cause is always there. We're here to solve problems.
-					<br>I took this picture because I recognized, that like <span title="The good one, not the one with Lucas Till"><i>McGyver</i></span>, the crew of and team behind Apollo 13 (who had to figure out how to literally fit a <a href="https://gizmodo.com/this-is-the-actual-hack-that-saved-the-astronauts-of-th-1598385593">square peg in a round hole </a> with supplies available on the spacecraft), and the creator of this bike-cart:
+					Well, as you know, web development is all about solving problems. The problem can be figuring out how to
+					most effectively advertise your business, or it can be finding a way to talk with your far-flung friends
+					and family, but that root cause is always there.
+					<br>I took this picture because I recognized, that like <span
+					title="The good one, not the one with Lucas Till"><i>McGyver</i></span>, the crew of and team behind
+					Apollo 13 (who had to figure out how to literally fit a <a
+					href="https://gizmodo.com/this-is-the-actual-hack-that-saved-the-astronauts-of-th-1598385593">square peg
+					in a round hole </a> with supplies available on the spacecraft), and the creator of this bike-cart, (who clearly needed a find a way to carry a lot of stuff around):
 				<ol>
 					<li>
 						It is always possible to "improvise, adapt, and overcome"
@@ -76,21 +94,30 @@
 						If it's stupid and it works, it's not stupid
 					</li>
 				</ol>
-				I'm no McGyver. But, as an entry-level web developer, I'm here to help solve your problems, even if that means creating a bike-cart.
-				<br>
-				There's nothing wrong with conventional solutions. But if you don't have the exact resources you need, you can always create a bike-cart. The person who made this contraption  all know the importaceas well as my time working in IT, as an EMT, and in Web Development, have taught me two important lessons:
-
-				Whether it comes down to creating a pelvic binder out of a blanket and a big stick, irrigating someone's eyes with a bag of normal saline and extra-large syringe, or helping your company build innovative web-apps and pages, I'm your guy. My name is Daniel Juarez, and I'm an entry-level web developer ready and able to help you solve problems.
+				My name is Daniel Juarez, and I'm an entry-level web developer ready and eager to help your company solve problems, even if that means building a bike-cart. Come get to know me!
 				</p>
 			</div>
-			<div class="work-section">
+			<div class="work-section container">
 				<h2 id="my-work">My Work</h2>
 				<div class="row">
 					<div class="card mx-auto" style="width: 17rem;">
 						<img class="card-img-top img-thumbnail" src="resources/placeholderBurner.jpg" alt="Card image cap">
 						<div class="card-body">
 							<h5 class="card-title">Peep</h5>
-							<p class="card-text">"Peep" is webapp that my group, "Birbs" created during my time attending the CNM Fullstack Web Development program. Using data from the eBirds API, it allows users to keep track of their bird sightings around New Mexico. </p>
+							<p class="card-text">"Peep" is webapp that my group, "Birbs" created during my time attending the
+								CNM Fullstack Web Development program. Using data from the eBirds API, it allows users to keep
+								track of their bird sightings around New Mexico. </p>
+							<a target="_blank" href="https://github.com/deepdivebirbs/peep" class="btn btn-primary">Check It
+								Out!</a>
+						</div>
+					</div>
+					<div class="card mx-auto" style="width: 17rem;">
+						<img class="card-img-top img-thumbnail" src="resources/placeholderBurner.jpg" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">Peep</h5>
+							<p class="card-text">"Peep" is webapp that my group, "Birbs" created during my time attending the
+								CNM Fullstack Web Development program. Using data from the eBirds API, it allows users to keep
+								track of their bird sightings around New Mexico. </p>
 							<a href="#" class="btn btn-primary">Check It Out!</a>
 						</div>
 					</div>
@@ -98,7 +125,9 @@
 						<img class="card-img-top img-thumbnail" src="resources/placeholderBurner.jpg" alt="Card image cap">
 						<div class="card-body">
 							<h5 class="card-title">Peep</h5>
-							<p class="card-text">"Peep" is webapp that my group, "Birbs" created during my time attending the CNM Fullstack Web Development program. Using data from the eBirds API, it allows users to keep track of their bird sightings around New Mexico. </p>
+							<p class="card-text">"Peep" is webapp that my group, "Birbs" created during my time attending the
+								CNM Fullstack Web Development program. Using data from the eBirds API, it allows users to keep
+								track of their bird sightings around New Mexico. </p>
 							<a href="#" class="btn btn-primary">Check It Out!</a>
 						</div>
 					</div>
@@ -106,21 +135,15 @@
 						<img class="card-img-top img-thumbnail" src="resources/placeholderBurner.jpg" alt="Card image cap">
 						<div class="card-body">
 							<h5 class="card-title">Peep</h5>
-							<p class="card-text">"Peep" is webapp that my group, "Birbs" created during my time attending the CNM Fullstack Web Development program. Using data from the eBirds API, it allows users to keep track of their bird sightings around New Mexico. </p>
-							<a href="#" class="btn btn-primary">Check It Out!</a>
-						</div>
-					</div>
-					<div class="card mx-auto" style="width: 17rem;">
-						<img class="card-img-top img-thumbnail" src="resources/placeholderBurner.jpg" alt="Card image cap">
-						<div class="card-body">
-							<h5 class="card-title">Peep</h5>
-							<p class="card-text">"Peep" is webapp that my group, "Birbs" created during my time attending the CNM Fullstack Web Development program. Using data from the eBirds API, it allows users to keep track of their bird sightings around New Mexico. </p>
+							<p class="card-text">"Peep" is webapp that my group, "Birbs" created during my time attending the
+								CNM Fullstack Web Development program. Using data from the eBirds API, it allows users to keep
+								track of their bird sightings around New Mexico. </p>
 							<a href="#" class="btn btn-primary">Check It Out!</a>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="contact-section">
+			<div class="contact-section container">
 				<h2 id="contact-me">Contact Me!</h2>
 				<form id="daniel-contact-form" action="../php/" method="post">
 					<div class="form-group">
@@ -144,7 +167,7 @@
 						</div>
 					</div>
 					<div class="form-group">
-						<label for ="Subject">Subject</label>
+						<label for="Subject">Subject</label>
 						<div class="input-group">
 							<div class="input-group-prepend">
 								<span class="input-group-text"></span>
@@ -182,7 +205,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="Link-Section">
+			<div class="Link-Section container">
 				<h2 id="my-links">My Links</h2>
 			</div>
 

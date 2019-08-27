@@ -1,15 +1,20 @@
-.container {
-}
-
 .card {
 	padding:5px;
 	margin:5px;
 }
-.navbar {
-	color: #AA743A
+
+body {
+	padding-top: 85px;
+	}
+	@media (max-width:979px) {
+	body {padding-top: 0}
 }
 
-.bikeCart {
+.nav {
+	background-color: #AA743A
+}
+
+div.bikeCart {
 	max-height: 32em;
 	display: block;
 	margin-left: auto;

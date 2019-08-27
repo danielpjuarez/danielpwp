@@ -79,4 +79,8 @@ $(document).ready(function(){
 
 	});/* end validate function here */
 
+	// Auto close menu when clicking/tapping anywhere
+	$('body').on("click", function() {
+		$('.navbar-collapse').collapse('hide');
+	})
 });/*end document.ready()*/

@@ -3,6 +3,10 @@
 	margin:5px;
 }
 
+.resetButton {
+	background-color: #F19837
+}
+
 body {
 	padding-top: 85px;
 	}
@@ -10,9 +14,6 @@ body {
 	body {padding-top: 0}
 }
 
-.nav {
-	background-color: #AA743A
-}
 
 div.bikeCart {
 	max-height: 32em;
@@ -20,8 +21,8 @@ div.bikeCart {
 	margin-left: auto;
 	margin-right: auto;}
 
-.btn-primary {
-	background-color: #F19837;
+.btn-primary .sendButton{
+	background-color: #007bff;
 	color: black;
 	border-color: #F19837;
 }

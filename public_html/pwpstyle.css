@@ -1,27 +1,21 @@
-.navbar-brand,
-.nav-link{
+.nav-link {
 	color: white;
 }
-
-.card {
-	padding:5px;
-	margin:5px;
-}
+/*.card {*/
+/*	padding:5px;*/
+/*	margin:5px;*/
+/*}*/
 
 .resetButton {
 	background-color: #F19837;
 	color: white;
 }
 
-body {
-	padding-top:3em;}
-
 @media screen and (min-width: 576px) {
 	.bikeCart{
 		width: 75%;
 	}
 }
-
 @media screen and (min-width: 767px) {
 	.bikeCart{
 		width: 50%;

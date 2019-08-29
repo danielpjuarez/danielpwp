@@ -1,10 +1,10 @@
 .nav-link {
 	color: white;
 }
-/*.card {*/
-/*	padding:5px;*/
-/*	margin:5px;*/
-/*}*/
+
+.gradient {
+	background-image: linear-gradient(to bottom right, #4ba2ff , white);
+}
 
 .resetButton {
 	background-color: #F19837;

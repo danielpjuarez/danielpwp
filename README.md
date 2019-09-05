@@ -25,7 +25,7 @@ Overall, this is very good work.  Your wireframes set you up very well for the r
 This milestone grades at a Tier III.
 
 ## Milestone 3 Feedback
-* When turning phone to landscape mode, the "My Work" section of your PWP becomes a little cluttered
+* When turning phone to landscape mode, the "My Work" section of your PWP becomes a little cluttered. You might want to adjust your breakpoints or implement a media query so that these items stack similar to how they lookin in portrait mode.
 * I suggested in person that you might want to adjust where your page lands when one of the links is clicked on your navbar
 * Contact form works
 
